@@ -32,7 +32,7 @@ group :development, :test do
   gem "redis"
   gem "rspec-rails", "~> 8"
   gem "rubocop-md", "~> 2"
-  gem "selenium-webdriver", "~> 4"
+  gem "selenium-webdriver", "~> 4", ">= 4.35.0"
   gem "simplecov-console", "< 1"
   gem "simplecov", "< 1"
   gem "slim", "~> 5"
