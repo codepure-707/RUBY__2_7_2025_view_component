@@ -5,7 +5,7 @@ gemspec
 
 rails_version = (ENV["RAILS_VERSION"] || "~> 8").to_s
 
-gem "rails", (rails_version == "main") ? {git: "https://github.com/rails/rails", ref: "main"} : rails_version
+gem "rails", ">= 8.0.2.1", (rails_version == "main") ? {git: "https://github.com/rails/rails", ref: "main"} : rails_version
 
 ruby_version = (ENV["RUBY_VERSION"] || "~> 3.4").to_s
 ruby ruby_version
@@ -14,23 +14,23 @@ group :development, :test do
   gem "allocation_stats"
   gem "appraisal", "~> 2"
   gem "benchmark-ips", "~> 2"
-  gem "better_html"
+  gem "better_html", ">= 2.2.0"
   gem "bundler", "~> 2"
   gem "capybara", "~> 3"
   gem "cuprite"
   gem "dry-initializer", require: true
   gem "erb_lint"
   gem "haml", "~> 6"
-  gem "jbuilder", "~> 2"
+  gem "jbuilder", "~> 2", ">= 2.14.0"
   gem "m", "~> 1"
   gem "method_source", "~> 1"
   gem "minitest", "~> 5"
-  gem "propshaft", "~> 1"
+  gem "propshaft", "~> 1", ">= 1.2.0"
   gem "puma", "~> 6"
   gem "rake", "~> 13"
   gem "rails-dom-testing", "~> 2.3.0"
   gem "redis"
-  gem "rspec-rails", "~> 8"
+  gem "rspec-rails", "~> 8", ">= 8.0.2"
   gem "rubocop-md", "~> 2"
   gem "selenium-webdriver", "~> 4"
   gem "simplecov-console", "< 1"
@@ -38,7 +38,7 @@ group :development, :test do
   gem "slim", "~> 5"
   gem "sprockets-rails", "~> 3"
   gem "standard", "~> 1"
-  gem "turbo-rails"
+  gem "turbo-rails", ">= 2.0.17"
   gem "warning"
   gem "yard-activesupport-concern", "< 1"
   gem "yard", "< 1"
